@@ -30,13 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookHevenDashBoard));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panelSupplierMSubMenu = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.btnSupplierManagement = new System.Windows.Forms.Button();
+            this.btn_Author = new System.Windows.Forms.Button();
             this.panelOrderMSubMenu = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -57,28 +53,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.mySqlConnection1 = new MySql.Data.MySqlClient.MySqlConnection();
             this.btnAddNewCustomer = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.SuplierPanel = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
-            this.panelSupplierMSubMenu.SuspendLayout();
             this.panelOrderMSubMenu.SuspendLayout();
             this.panelCustomerMSubMenu.SuspendLayout();
             this.panelBookISubMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuplierPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(211)))), ((int)(((byte)(191)))));
-            this.panelSideMenu.Controls.Add(this.button13);
+            this.panelSideMenu.Controls.Add(this.SuplierPanel);
             this.panelSideMenu.Controls.Add(this.button4);
             this.panelSideMenu.Controls.Add(this.button3);
-            this.panelSideMenu.Controls.Add(this.button2);
-            this.panelSideMenu.Controls.Add(this.panelSupplierMSubMenu);
-            this.panelSideMenu.Controls.Add(this.btnSupplierManagement);
+            this.panelSideMenu.Controls.Add(this.btn_Author);
             this.panelSideMenu.Controls.Add(this.panelOrderMSubMenu);
             this.panelSideMenu.Controls.Add(this.btnOrderManagement);
             this.panelSideMenu.Controls.Add(this.panelCustomerMSubMenu);
@@ -94,6 +88,24 @@
             this.panelSideMenu.Size = new System.Drawing.Size(399, 1010);
             this.panelSideMenu.TabIndex = 0;
             // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(0, 778);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(399, 57);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Supplier Management";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btnSupplier_Click);
+            // 
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -101,113 +113,34 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(0, 939);
+            this.button3.Location = new System.Drawing.Point(0, 729);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(378, 49);
+            this.button3.Size = new System.Drawing.Size(399, 49);
             this.button3.TabIndex = 16;
             this.button3.Text = "Add New Author";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.btnAuthor_Add);
             // 
-            // button2
+            // btn_Author
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(0, 882);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(378, 57);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Author Management";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // panelSupplierMSubMenu
-            // 
-            this.panelSupplierMSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.panelSupplierMSubMenu.Controls.Add(this.button10);
-            this.panelSupplierMSubMenu.Controls.Add(this.button11);
-            this.panelSupplierMSubMenu.Controls.Add(this.button12);
-            this.panelSupplierMSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSupplierMSubMenu.Location = new System.Drawing.Point(0, 729);
-            this.panelSupplierMSubMenu.Margin = new System.Windows.Forms.Padding(4);
-            this.panelSupplierMSubMenu.Name = "panelSupplierMSubMenu";
-            this.panelSupplierMSubMenu.Size = new System.Drawing.Size(378, 153);
-            this.panelSupplierMSubMenu.TabIndex = 6;
-            // 
-            // button10
-            // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button10.Location = new System.Drawing.Point(0, 98);
-            this.button10.Margin = new System.Windows.Forms.Padding(4);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(378, 54);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "button10";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button11.Location = new System.Drawing.Point(0, 49);
-            this.button11.Margin = new System.Windows.Forms.Padding(4);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(378, 49);
-            this.button11.TabIndex = 1;
-            this.button11.Text = "button11";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(0, 0);
-            this.button12.Margin = new System.Windows.Forms.Padding(4);
-            this.button12.Name = "button12";
-            this.button12.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(378, 49);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "Add supplier";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // btnSupplierManagement
-            // 
-            this.btnSupplierManagement.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSupplierManagement.FlatAppearance.BorderSize = 0;
-            this.btnSupplierManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSupplierManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupplierManagement.ForeColor = System.Drawing.Color.Black;
-            this.btnSupplierManagement.Location = new System.Drawing.Point(0, 672);
-            this.btnSupplierManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSupplierManagement.Name = "btnSupplierManagement";
-            this.btnSupplierManagement.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnSupplierManagement.Size = new System.Drawing.Size(378, 57);
-            this.btnSupplierManagement.TabIndex = 7;
-            this.btnSupplierManagement.Text = "Supplier Management";
-            this.btnSupplierManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSupplierManagement.UseVisualStyleBackColor = true;
-            this.btnSupplierManagement.Click += new System.EventHandler(this.btnSupplierManagement_Click);
+            this.btn_Author.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Author.FlatAppearance.BorderSize = 0;
+            this.btn_Author.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Author.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Author.ForeColor = System.Drawing.Color.Black;
+            this.btn_Author.Location = new System.Drawing.Point(0, 672);
+            this.btn_Author.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Author.Name = "btn_Author";
+            this.btn_Author.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btn_Author.Size = new System.Drawing.Size(399, 57);
+            this.btn_Author.TabIndex = 15;
+            this.btn_Author.Text = "Author Management";
+            this.btn_Author.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Author.UseVisualStyleBackColor = true;
+            this.btn_Author.Click += new System.EventHandler(this.btn_Author_Click);
             // 
             // panelOrderMSubMenu
             // 
@@ -219,7 +152,7 @@
             this.panelOrderMSubMenu.Location = new System.Drawing.Point(0, 519);
             this.panelOrderMSubMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelOrderMSubMenu.Name = "panelOrderMSubMenu";
-            this.panelOrderMSubMenu.Size = new System.Drawing.Size(378, 153);
+            this.panelOrderMSubMenu.Size = new System.Drawing.Size(399, 153);
             this.panelOrderMSubMenu.TabIndex = 4;
             // 
             // button1
@@ -233,7 +166,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(378, 54);
+            this.button1.Size = new System.Drawing.Size(399, 54);
             this.button1.TabIndex = 2;
             this.button1.Text = "button1";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -251,7 +184,7 @@
             this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(378, 49);
+            this.button8.Size = new System.Drawing.Size(399, 49);
             this.button8.TabIndex = 1;
             this.button8.Text = "button8";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -268,7 +201,7 @@
             this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(378, 49);
+            this.button9.Size = new System.Drawing.Size(399, 49);
             this.button9.TabIndex = 0;
             this.button9.Text = "button9";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -285,7 +218,7 @@
             this.btnOrderManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOrderManagement.Name = "btnOrderManagement";
             this.btnOrderManagement.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnOrderManagement.Size = new System.Drawing.Size(378, 57);
+            this.btnOrderManagement.Size = new System.Drawing.Size(399, 57);
             this.btnOrderManagement.TabIndex = 5;
             this.btnOrderManagement.Text = "Order Management";
             this.btnOrderManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -302,7 +235,7 @@
             this.panelCustomerMSubMenu.Location = new System.Drawing.Point(0, 309);
             this.panelCustomerMSubMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelCustomerMSubMenu.Name = "panelCustomerMSubMenu";
-            this.panelCustomerMSubMenu.Size = new System.Drawing.Size(378, 153);
+            this.panelCustomerMSubMenu.Size = new System.Drawing.Size(399, 153);
             this.panelCustomerMSubMenu.TabIndex = 3;
             // 
             // button5
@@ -316,7 +249,7 @@
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(378, 54);
+            this.button5.Size = new System.Drawing.Size(399, 54);
             this.button5.TabIndex = 2;
             this.button5.Text = "button5";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -333,7 +266,7 @@
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(378, 49);
+            this.button6.Size = new System.Drawing.Size(399, 49);
             this.button6.TabIndex = 1;
             this.button6.Text = "button6";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -350,7 +283,7 @@
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(378, 49);
+            this.button7.Size = new System.Drawing.Size(399, 49);
             this.button7.TabIndex = 0;
             this.button7.Text = "Add New Customer";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -368,7 +301,7 @@
             this.btnCustomerManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCustomerManagement.Name = "btnCustomerManagement";
             this.btnCustomerManagement.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnCustomerManagement.Size = new System.Drawing.Size(378, 57);
+            this.btnCustomerManagement.Size = new System.Drawing.Size(399, 57);
             this.btnCustomerManagement.TabIndex = 3;
             this.btnCustomerManagement.Text = "Customer Management";
             this.btnCustomerManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -384,7 +317,7 @@
             this.panelBookISubMenu.Location = new System.Drawing.Point(0, 151);
             this.panelBookISubMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelBookISubMenu.Name = "panelBookISubMenu";
-            this.panelBookISubMenu.Size = new System.Drawing.Size(378, 101);
+            this.panelBookISubMenu.Size = new System.Drawing.Size(399, 101);
             this.panelBookISubMenu.TabIndex = 2;
             // 
             // btnAddNewBook
@@ -398,7 +331,7 @@
             this.btnAddNewBook.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddNewBook.Name = "btnAddNewBook";
             this.btnAddNewBook.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.btnAddNewBook.Size = new System.Drawing.Size(378, 49);
+            this.btnAddNewBook.Size = new System.Drawing.Size(399, 49);
             this.btnAddNewBook.TabIndex = 1;
             this.btnAddNewBook.Text = "Add New Book";
             this.btnAddNewBook.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -416,7 +349,7 @@
             this.btnVewAllBooks.Margin = new System.Windows.Forms.Padding(4);
             this.btnVewAllBooks.Name = "btnVewAllBooks";
             this.btnVewAllBooks.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.btnVewAllBooks.Size = new System.Drawing.Size(378, 49);
+            this.btnVewAllBooks.Size = new System.Drawing.Size(399, 49);
             this.btnVewAllBooks.TabIndex = 0;
             this.btnVewAllBooks.Text = "View Books";
             this.btnVewAllBooks.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -434,7 +367,7 @@
             this.btnBookInventoryManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBookInventoryManagement.Name = "btnBookInventoryManagement";
             this.btnBookInventoryManagement.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnBookInventoryManagement.Size = new System.Drawing.Size(378, 57);
+            this.btnBookInventoryManagement.Size = new System.Drawing.Size(399, 57);
             this.btnBookInventoryManagement.TabIndex = 0;
             this.btnBookInventoryManagement.Text = "Book Inventory ";
             this.btnBookInventoryManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -452,7 +385,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(378, 94);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(399, 94);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // tableLayoutPanel2
@@ -471,7 +404,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(370, 86);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(391, 86);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // pictureBox1
@@ -513,23 +446,16 @@
             this.btnAddNewCustomer.TabIndex = 4;
             this.btnAddNewCustomer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChild_Paint);
             // 
-            // button4
+            // SuplierPanel
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(0, 988);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(378, 57);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Supplier Management";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.SuplierPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.SuplierPanel.Controls.Add(this.button13);
+            this.SuplierPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SuplierPanel.Location = new System.Drawing.Point(0, 835);
+            this.SuplierPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.SuplierPanel.Name = "SuplierPanel";
+            this.SuplierPanel.Size = new System.Drawing.Size(399, 153);
+            this.SuplierPanel.TabIndex = 19;
             // 
             // button13
             // 
@@ -538,12 +464,12 @@
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.Color.Black;
-            this.button13.Location = new System.Drawing.Point(0, 1045);
+            this.button13.Location = new System.Drawing.Point(0, 0);
             this.button13.Margin = new System.Windows.Forms.Padding(4);
             this.button13.Name = "button13";
             this.button13.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(378, 49);
-            this.button13.TabIndex = 18;
+            this.button13.Size = new System.Drawing.Size(399, 49);
+            this.button13.TabIndex = 19;
             this.button13.Text = "Add New Supplier";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.UseVisualStyleBackColor = true;
@@ -561,7 +487,6 @@
             this.Text = "Book";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelSideMenu.ResumeLayout(false);
-            this.panelSupplierMSubMenu.ResumeLayout(false);
             this.panelOrderMSubMenu.ResumeLayout(false);
             this.panelCustomerMSubMenu.ResumeLayout(false);
             this.panelBookISubMenu.ResumeLayout(false);
@@ -569,6 +494,7 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.SuplierPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -587,11 +513,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button btnCustomerManagement;
         private System.Windows.Forms.Panel btnAddNewCustomer;
-        private System.Windows.Forms.Panel panelSupplierMSubMenu;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button btnSupplierManagement;
         private System.Windows.Forms.Panel panelOrderMSubMenu;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button8;
@@ -601,9 +522,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Author;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel SuplierPanel;
         private System.Windows.Forms.Button button13;
     }
 }

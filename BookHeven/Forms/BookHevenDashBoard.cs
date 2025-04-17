@@ -36,7 +36,7 @@ namespace BookHeven.Forms
             panelBookISubMenu.Visible = false;
             panelCustomerMSubMenu.Visible = false;
             panelOrderMSubMenu.Visible = false;
-            panelSupplierMSubMenu.Visible = false;
+            //panelSupplierMSubMenu.Visible = false;
         }
         private void HideSubMenu()
         {
@@ -47,8 +47,8 @@ namespace BookHeven.Forms
                 panelCustomerMSubMenu.Visible = false;
             if (panelOrderMSubMenu.Visible == true)
                 panelOrderMSubMenu.Visible = false;
-            if (panelSupplierMSubMenu.Visible == true)
-                panelSupplierMSubMenu.Visible = false;
+            /*if (panelSupplierMSubMenu.Visible == true)
+                panelSupplierMSubMenu.Visible = false;*/
         }
 
         private void ShowSubMenu(Panel subMenu) {
@@ -103,7 +103,7 @@ namespace BookHeven.Forms
 
         private void btnSupplierManagement_Click(object sender, EventArgs e)
         {
-            ShowSubMenu(panelSupplierMSubMenu);
+          //  ShowSubMenu(panelSupplierMSubMenu);
         }
 
         private void panelChild_Paint(object sender, PaintEventArgs e)
@@ -134,6 +134,21 @@ namespace BookHeven.Forms
         private void btnAdd_Supplier(object sender, EventArgs e)
         {
             OpenChildForm(new AddNewSupplier());
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Author_Click(object sender, EventArgs e)
+        {
+           // ShowSubMenu(pa);
+        }
+
+        private void btnSupplier_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(SuplierPanel);
         }
     }
 }

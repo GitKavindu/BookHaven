@@ -35,33 +35,31 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CustomerGridView = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tblPnlDataEntry.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tblPnlDataEntry, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.CustomerGridView, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 1);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -76,8 +74,8 @@
             // 
             // tblPnlDataEntry
             // 
-            this.tblPnlDataEntry.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.tblPnlDataEntry.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tblPnlDataEntry.ColumnCount = 4;
             this.tblPnlDataEntry.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
@@ -89,13 +87,11 @@
             this.tblPnlDataEntry.Controls.Add(this.label1, 2, 1);
             this.tblPnlDataEntry.Controls.Add(this.label4, 0, 1);
             this.tblPnlDataEntry.Controls.Add(this.label5, 0, 2);
-            this.tblPnlDataEntry.Controls.Add(this.label6, 2, 2);
-            this.tblPnlDataEntry.Controls.Add(this.textBox1, 1, 0);
-            this.tblPnlDataEntry.Controls.Add(this.textBox2, 1, 1);
-            this.tblPnlDataEntry.Controls.Add(this.textBox3, 1, 2);
-            this.tblPnlDataEntry.Controls.Add(this.textBox4, 3, 0);
-            this.tblPnlDataEntry.Controls.Add(this.textBox5, 3, 1);
-            this.tblPnlDataEntry.Controls.Add(this.textBox6, 3, 2);
+            this.tblPnlDataEntry.Controls.Add(this.txtFirstName, 1, 0);
+            this.tblPnlDataEntry.Controls.Add(this.txtLastName, 1, 1);
+            this.tblPnlDataEntry.Controls.Add(this.txtEmail, 1, 2);
+            this.tblPnlDataEntry.Controls.Add(this.txtPhone, 3, 0);
+            this.tblPnlDataEntry.Controls.Add(this.txtAddress, 3, 1);
             this.tblPnlDataEntry.Controls.Add(this.tableLayoutPanel2, 3, 3);
             this.tblPnlDataEntry.Location = new System.Drawing.Point(3, 55);
             this.tblPnlDataEntry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -164,75 +160,55 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Email Address";
             // 
-            // label6
+            // txtFirstName
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(614, 107);
-            this.label6.Margin = new System.Windows.Forms.Padding(27, 12, 13, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 16);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Gender";
+            this.txtFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFirstName.Location = new System.Drawing.Point(134, 12);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(440, 22);
+            this.txtFirstName.TabIndex = 7;
             // 
-            // textBox1
+            // txtLastName
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(134, 12);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(440, 22);
-            this.textBox1.TabIndex = 7;
+            this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLastName.Location = new System.Drawing.Point(134, 58);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(440, 22);
+            this.txtLastName.TabIndex = 8;
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(134, 58);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(440, 22);
-            this.textBox2.TabIndex = 8;
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmail.Location = new System.Drawing.Point(134, 104);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(440, 22);
+            this.txtEmail.TabIndex = 9;
             // 
-            // textBox3
+            // txtPhone
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(134, 104);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(440, 22);
-            this.textBox3.TabIndex = 9;
+            this.txtPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhone.Location = new System.Drawing.Point(698, 12);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(479, 22);
+            this.txtPhone.TabIndex = 10;
             // 
-            // textBox4
+            // txtAddress
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(698, 12);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(479, 22);
-            this.textBox4.TabIndex = 10;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(698, 58);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(479, 22);
-            this.textBox5.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Location = new System.Drawing.Point(698, 104);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(479, 22);
-            this.textBox6.TabIndex = 12;
+            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAddress.Location = new System.Drawing.Point(698, 58);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(479, 22);
+            this.txtAddress.TabIndex = 11;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -269,20 +245,20 @@
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnSave.Click += new System.EventHandler(this.btnAddCustomer);
             // 
-            // dataGridView1
+            // CustomerGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.CustomerGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 313);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(13, 49, 13, 25);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1170, 377);
-            this.dataGridView1.TabIndex = 1;
+            this.CustomerGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CustomerGridView.Location = new System.Drawing.Point(13, 313);
+            this.CustomerGridView.Margin = new System.Windows.Forms.Padding(13, 49, 13, 25);
+            this.CustomerGridView.Name = "CustomerGridView";
+            this.CustomerGridView.RowHeadersWidth = 51;
+            this.CustomerGridView.Size = new System.Drawing.Size(1170, 377);
+            this.CustomerGridView.TabIndex = 1;
             // 
             // label7
             // 
@@ -297,21 +273,21 @@
             this.label7.Text = "Add New Customer";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // AddNewAuthor
+            // AddNewCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 715);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "AddNewAuthor";
+            this.Name = "AddNewCustomer";
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tblPnlDataEntry.ResumeLayout(false);
             this.tblPnlDataEntry.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -325,17 +301,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView CustomerGridView;
         private System.Windows.Forms.Label label7;
     }
 }
