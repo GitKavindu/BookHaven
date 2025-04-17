@@ -1,0 +1,355 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\esoft\\ad\\BookHeven\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|BookHeven||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\config\\datasourceconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\config\\datasourceconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\bookmanagement\\newbooklatest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\bookmanagement\\newbooklatest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\bookmanagement\\newbooklatest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\bookmanagement\\newbooklatest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\bookhevendashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\bookhevendashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\bookmanagement\\newbooklatest.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\bookmanagement\\newbooklatest.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\bookhevendashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\bookhevendashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\customermanagement\\addnewcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\customermanagement\\addnewcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\bookhevendashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\bookhevendashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\bookmanagement\\allbookview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\bookmanagement\\allbookview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\customermanagement\\addnewcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\customermanagement\\addnewcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\bookmanagement\\allbookview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\bookmanagement\\allbookview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\bookmanagement\\allbookview.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\bookmanagement\\allbookview.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|C:\\esoft\\ad\\BookHeven\\bookheven\\forms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|solutionrelative:bookheven\\forms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBDE15F-CBDC-40B0-9147-84CDB6701354}|BookHeven\\BookHeven.csproj|c:\\esoft\\ad\\bookheven\\bookheven\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookHevenDashBoard.cs [Design]",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookHevenDashBoard.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\BookHevenDashBoard.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookHevenDashBoard.cs [Design]",
+              "RelativeToolTip": "BookHeven\\Forms\\BookHevenDashBoard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T11:53:07.756Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataSourceConfig.cs",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\config\\DataSourceConfig.cs",
+              "RelativeDocumentMoniker": "BookHeven\\config\\DataSourceConfig.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\config\\DataSourceConfig.cs",
+              "RelativeToolTip": "BookHeven\\config\\DataSourceConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T11:38:40.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "BookHeven\\Properties\\Settings.settings",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Properties\\Settings.settings",
+              "RelativeToolTip": "BookHeven\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2025-04-16T11:36:00.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "BookHeven\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T11:35:56.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookHeven",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\BookHeven.csproj",
+              "RelativeDocumentMoniker": "BookHeven\\BookHeven.csproj",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\BookHeven.csproj",
+              "RelativeToolTip": "BookHeven\\BookHeven.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-16T11:35:41.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NewBookLatest.cs [Design]",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\NewBookLatest.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\BookManagement\\NewBookLatest.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\NewBookLatest.cs [Design]",
+              "RelativeToolTip": "BookHeven\\Forms\\BookManagement\\NewBookLatest.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T11:11:14.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NewBookLatest.Designer.cs",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\NewBookLatest.Designer.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\BookManagement\\NewBookLatest.Designer.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\NewBookLatest.Designer.cs",
+              "RelativeToolTip": "BookHeven\\Forms\\BookManagement\\NewBookLatest.Designer.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAWwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T08:06:28.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NewBookLatest.cs",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\NewBookLatest.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\BookManagement\\NewBookLatest.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\NewBookLatest.cs",
+              "RelativeToolTip": "BookHeven\\Forms\\BookManagement\\NewBookLatest.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAiwJUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T20:43:52.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddNewCustomer.cs [Design]",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\CustomerManagement\\AddNewCustomer.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\CustomerManagement\\AddNewCustomer.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\CustomerManagement\\AddNewCustomer.cs [Design]",
+              "RelativeToolTip": "BookHeven\\Forms\\CustomerManagement\\AddNewCustomer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T05:32:29.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookHevenDashBoard.Designer.cs",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookHevenDashBoard.Designer.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\BookHevenDashBoard.Designer.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookHevenDashBoard.Designer.cs",
+              "RelativeToolTip": "BookHeven\\Forms\\BookHevenDashBoard.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T03:24:23.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\Login.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\Login.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\Login.cs",
+              "RelativeToolTip": "BookHeven\\Forms\\Login.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAWwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T01:31:46.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookHevenDashBoard.cs",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookHevenDashBoard.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\BookHevenDashBoard.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookHevenDashBoard.cs",
+              "RelativeToolTip": "BookHeven\\Forms\\BookHevenDashBoard.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAgwHEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T15:05:18.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AddNewCustomer.cs",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\CustomerManagement\\AddNewCustomer.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\CustomerManagement\\AddNewCustomer.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\CustomerManagement\\AddNewCustomer.cs",
+              "RelativeToolTip": "BookHeven\\Forms\\CustomerManagement\\AddNewCustomer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAWwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T07:52:42.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\Login.Designer.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\Login.Designer.cs",
+              "RelativeToolTip": "BookHeven\\Forms\\Login.Designer.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAAAKkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T01:32:11.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Program.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Program.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Program.cs",
+              "RelativeToolTip": "BookHeven\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T00:36:44.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AllBookView.cs [Design]",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\AllBookView.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\BookManagement\\AllBookView.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\AllBookView.cs [Design]",
+              "RelativeToolTip": "BookHeven\\Forms\\BookManagement\\AllBookView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T03:25:05.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AllBookView.cs",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\AllBookView.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\BookManagement\\AllBookView.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\AllBookView.cs",
+              "RelativeToolTip": "BookHeven\\Forms\\BookManagement\\AllBookView.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T11:44:34.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\Login.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\Login.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\Login.cs [Design]",
+              "RelativeToolTip": "BookHeven\\Forms\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T01:30:04.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AllBookView.resx",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\AllBookView.resx",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\BookManagement\\AllBookView.resx",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\BookManagement\\AllBookView.resx",
+              "RelativeToolTip": "BookHeven\\Forms\\BookManagement\\AllBookView.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-03-25T14:04:04.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\Form2.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\Form2.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\Form2.cs [Design]",
+              "RelativeToolTip": "BookHeven\\Forms\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T01:17:39.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\Form1.cs",
+              "RelativeDocumentMoniker": "BookHeven\\Forms\\Form1.cs",
+              "ToolTip": "C:\\esoft\\ad\\BookHeven\\BookHeven\\Forms\\Form1.cs [Design]",
+              "RelativeToolTip": "BookHeven\\Forms\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T01:16:21.367Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
