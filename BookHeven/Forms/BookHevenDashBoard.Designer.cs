@@ -57,6 +57,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.mySqlConnection1 = new MySql.Data.MySqlClient.MySqlConnection();
             this.btnAddNewCustomer = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelSupplierMSubMenu.SuspendLayout();
             this.panelOrderMSubMenu.SuspendLayout();
@@ -71,6 +73,8 @@
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(211)))), ((int)(((byte)(191)))));
+            this.panelSideMenu.Controls.Add(this.button13);
+            this.panelSideMenu.Controls.Add(this.button4);
             this.panelSideMenu.Controls.Add(this.button3);
             this.panelSideMenu.Controls.Add(this.button2);
             this.panelSideMenu.Controls.Add(this.panelSupplierMSubMenu);
@@ -87,7 +91,7 @@
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(399, 939);
+            this.panelSideMenu.Size = new System.Drawing.Size(399, 1010);
             this.panelSideMenu.TabIndex = 0;
             // 
             // button3
@@ -505,15 +509,51 @@
             this.btnAddNewCustomer.Location = new System.Drawing.Point(399, 0);
             this.btnAddNewCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddNewCustomer.Name = "btnAddNewCustomer";
-            this.btnAddNewCustomer.Size = new System.Drawing.Size(1250, 939);
+            this.btnAddNewCustomer.Size = new System.Drawing.Size(1186, 1010);
             this.btnAddNewCustomer.TabIndex = 4;
             this.btnAddNewCustomer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChild_Paint);
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(0, 988);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(378, 57);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Supplier Management";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button13
+            // 
+            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.Color.Black;
+            this.button13.Location = new System.Drawing.Point(0, 1045);
+            this.button13.Margin = new System.Windows.Forms.Padding(4);
+            this.button13.Name = "button13";
+            this.button13.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.button13.Size = new System.Drawing.Size(378, 49);
+            this.button13.TabIndex = 18;
+            this.button13.Text = "Add New Supplier";
+            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.btnAdd_Supplier);
             // 
             // BookHevenDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1649, 939);
+            this.ClientSize = new System.Drawing.Size(1585, 1010);
             this.Controls.Add(this.btnAddNewCustomer);
             this.Controls.Add(this.panelSideMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -563,5 +603,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button13;
     }
 }

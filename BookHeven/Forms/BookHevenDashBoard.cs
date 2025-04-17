@@ -1,6 +1,7 @@
 ﻿using BookHeven.Forms.BookManagement;
 using BookHeven.Forms.CustomerManagement;
 using BookHeven.Forms.AuthorManagement;
+using BookHeven.Forms.SupplierManagement;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -123,6 +124,16 @@ namespace BookHeven.Forms
         private void btnAuthor_Add(object sender, EventArgs e)
         {
             OpenChildForm(new AddNewAuthor());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Supplier(object sender, EventArgs e)
+        {
+            OpenChildForm(new AddNewSupplier());
         }
     }
 }
