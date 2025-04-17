@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using BookHeven.config;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Xml.Linq;
 
 namespace BookHeven.Forms.BookManagement
 {
@@ -103,7 +105,8 @@ namespace BookHeven.Forms.BookManagement
 
         private void cmbGenre_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.selectedGenre = cmbGenre.Text;
+            var selectedGenre = (Genre)cmbGenre.SelectedItem;
+            this.selectedGenre= selectedGenre.ID;
         }
 
         private void txtISBN_TextChanged(object sender, EventArgs e)
@@ -152,16 +155,22 @@ namespace BookHeven.Forms.BookManagement
             try
             {
                 connection.Open();
+
                 string query = @"
-                    SELECT b.*, CONCAT(a.first_name, ' ', a.last_name) AS author_name, g.name AS genre_name
-                    FROM books b
-                    LEFT JOIN authors a ON a.author_id = b.author_id
-                    LEFT JOIN genres g ON g.genre_id = b.genre_id";
+                    INSERT INTO books (title,isbn,price,stock_quantity,publish_date,author_id,genre_id) 
+                    VALUES (@title,@isbn,@price,@stock_quantity,@publish_date,@author_id,@genre_id)";
+
                 MySqlCommand cmd = new MySqlCommand(query, connection);
-                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-                DataTable dataTable = new DataTable();
-                adapter.Fill(dataTable);
-                dgvBook.DataSource = dataTable;
+
+                cmd.Parameters.AddWithValue("@title",this.title);
+                cmd.Parameters.AddWithValue("@isbn", this.iSBN);
+                cmd.Parameters.AddWithValue("@price", this.price);
+                cmd.Parameters.AddWithValue("@stock_quantity", this.quantity);
+                cmd.Parameters.AddWithValue("@publish_date",DateTime.Now.ToString("yyyy-MM-dd"));
+                cmd.Parameters.AddWithValue("@author_id",this.selectedAuther);
+                cmd.Parameters.AddWithValue("@genre_id", this.selectedGenre);
+
+                cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -170,6 +179,7 @@ namespace BookHeven.Forms.BookManagement
             finally
             {
                 connection.Close();
+                this.LoadBooks();
             }
         }
     }
