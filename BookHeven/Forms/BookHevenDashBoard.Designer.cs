@@ -30,13 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookHevenDashBoard));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.SuplierPanel = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btn_Author = new System.Windows.Forms.Button();
             this.panelOrderMSubMenu = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btn_PlaceOrder = new System.Windows.Forms.Button();
             this.btnOrderManagement = new System.Windows.Forms.Button();
             this.panelCustomerMSubMenu = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
@@ -53,16 +55,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.mySqlConnection1 = new MySql.Data.MySqlClient.MySqlConnection();
             this.btnAddNewCustomer = new System.Windows.Forms.Panel();
-            this.SuplierPanel = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
+            this.SuplierPanel.SuspendLayout();
             this.panelOrderMSubMenu.SuspendLayout();
             this.panelCustomerMSubMenu.SuspendLayout();
             this.panelBookISubMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuplierPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -87,6 +87,35 @@
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(399, 1010);
             this.panelSideMenu.TabIndex = 0;
+            // 
+            // SuplierPanel
+            // 
+            this.SuplierPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.SuplierPanel.Controls.Add(this.button13);
+            this.SuplierPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SuplierPanel.Location = new System.Drawing.Point(0, 835);
+            this.SuplierPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.SuplierPanel.Name = "SuplierPanel";
+            this.SuplierPanel.Size = new System.Drawing.Size(399, 153);
+            this.SuplierPanel.TabIndex = 19;
+            // 
+            // button13
+            // 
+            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.Color.Black;
+            this.button13.Location = new System.Drawing.Point(0, 0);
+            this.button13.Margin = new System.Windows.Forms.Padding(4);
+            this.button13.Name = "button13";
+            this.button13.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.button13.Size = new System.Drawing.Size(399, 49);
+            this.button13.TabIndex = 19;
+            this.button13.Text = "Add New Supplier";
+            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.btnAdd_Supplier);
             // 
             // button4
             // 
@@ -147,7 +176,7 @@
             this.panelOrderMSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
             this.panelOrderMSubMenu.Controls.Add(this.button1);
             this.panelOrderMSubMenu.Controls.Add(this.button8);
-            this.panelOrderMSubMenu.Controls.Add(this.button9);
+            this.panelOrderMSubMenu.Controls.Add(this.btn_PlaceOrder);
             this.panelOrderMSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelOrderMSubMenu.Location = new System.Drawing.Point(0, 519);
             this.panelOrderMSubMenu.Margin = new System.Windows.Forms.Padding(4);
@@ -190,22 +219,23 @@
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btn_PlaceOrder
             // 
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(0, 0);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(399, 49);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "button9";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = true;
+            this.btn_PlaceOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_PlaceOrder.FlatAppearance.BorderSize = 0;
+            this.btn_PlaceOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_PlaceOrder.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PlaceOrder.ForeColor = System.Drawing.Color.Black;
+            this.btn_PlaceOrder.Location = new System.Drawing.Point(0, 0);
+            this.btn_PlaceOrder.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_PlaceOrder.Name = "btn_PlaceOrder";
+            this.btn_PlaceOrder.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btn_PlaceOrder.Size = new System.Drawing.Size(399, 49);
+            this.btn_PlaceOrder.TabIndex = 0;
+            this.btn_PlaceOrder.Text = "PlaceOrder";
+            this.btn_PlaceOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_PlaceOrder.UseVisualStyleBackColor = true;
+            this.btn_PlaceOrder.Click += new System.EventHandler(this.btn_PlaceOrder_Click);
             // 
             // btnOrderManagement
             // 
@@ -446,35 +476,6 @@
             this.btnAddNewCustomer.TabIndex = 4;
             this.btnAddNewCustomer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChild_Paint);
             // 
-            // SuplierPanel
-            // 
-            this.SuplierPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.SuplierPanel.Controls.Add(this.button13);
-            this.SuplierPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SuplierPanel.Location = new System.Drawing.Point(0, 835);
-            this.SuplierPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.SuplierPanel.Name = "SuplierPanel";
-            this.SuplierPanel.Size = new System.Drawing.Size(399, 153);
-            this.SuplierPanel.TabIndex = 19;
-            // 
-            // button13
-            // 
-            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.Black;
-            this.button13.Location = new System.Drawing.Point(0, 0);
-            this.button13.Margin = new System.Windows.Forms.Padding(4);
-            this.button13.Name = "button13";
-            this.button13.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(399, 49);
-            this.button13.TabIndex = 19;
-            this.button13.Text = "Add New Supplier";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.btnAdd_Supplier);
-            // 
             // BookHevenDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -487,6 +488,7 @@
             this.Text = "Book";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelSideMenu.ResumeLayout(false);
+            this.SuplierPanel.ResumeLayout(false);
             this.panelOrderMSubMenu.ResumeLayout(false);
             this.panelCustomerMSubMenu.ResumeLayout(false);
             this.panelBookISubMenu.ResumeLayout(false);
@@ -494,7 +496,6 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.SuplierPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -516,7 +517,7 @@
         private System.Windows.Forms.Panel panelOrderMSubMenu;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btn_PlaceOrder;
         private System.Windows.Forms.Button btnOrderManagement;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;

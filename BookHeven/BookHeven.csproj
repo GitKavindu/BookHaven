@@ -99,6 +99,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="config\DataSourceConfig.cs" />
+    <Compile Include="Forms\OrderManagement\AddNewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OrderManagement\AddNewOrder.Designer.cs">
+      <DependentUpon>AddNewOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SupplierManagement\AddNewSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\OrderManagement\AddNewOrder.resx">
+      <DependentUpon>AddNewOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SupplierManagement\AddNewSupplier.resx">
       <DependentUpon>AddNewSupplier.cs</DependentUpon>
     </EmbeddedResource>

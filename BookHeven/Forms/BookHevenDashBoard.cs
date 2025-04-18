@@ -2,6 +2,7 @@
 using BookHeven.Forms.CustomerManagement;
 using BookHeven.Forms.AuthorManagement;
 using BookHeven.Forms.SupplierManagement;
+using BookHeven.Forms.OrderManagement;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -149,6 +150,11 @@ namespace BookHeven.Forms
         private void btnSupplier_Click(object sender, EventArgs e)
         {
             ShowSubMenu(SuplierPanel);
+        }
+
+        private void btn_PlaceOrder_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new AddNewOrder());
         }
     }
 }

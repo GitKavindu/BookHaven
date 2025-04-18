@@ -64,7 +64,7 @@ namespace BookHeven.Forms.CustomerManagement
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error creating the book: " + ex.Message);
+                MessageBox.Show("Error creating the customer: " + ex.Message);
             }
             finally
             {
