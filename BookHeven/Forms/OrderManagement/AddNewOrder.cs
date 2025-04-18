@@ -152,7 +152,7 @@ namespace BookHeven.Forms.OrderManagement
                 cmbBooks.DisplayMember = "title";
 
                 //lbl_addedBooks.Text=lbl_addedBooks.Text+$"{cmbBooks.SelectedText} - {booklist.}";
-
+                cmbCustomers.Enabled= false;
                 
             }   
         }
@@ -273,6 +273,7 @@ namespace BookHeven.Forms.OrderManagement
         {
             LoadBooks();
             lbl_addedBooks.Text= "";
+            cmbCustomers.Enabled= true;
         }
 
         private double calculateTotal()
