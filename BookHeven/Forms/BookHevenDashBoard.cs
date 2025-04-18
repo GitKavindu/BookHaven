@@ -3,6 +3,7 @@ using BookHeven.Forms.CustomerManagement;
 using BookHeven.Forms.AuthorManagement;
 using BookHeven.Forms.SupplierManagement;
 using BookHeven.Forms.OrderManagement;
+using BookHeven.Forms.UserManagement;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -127,24 +128,9 @@ namespace BookHeven.Forms
             OpenChildForm(new AddNewAuthor());
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAdd_Supplier(object sender, EventArgs e)
         {
             OpenChildForm(new AddNewSupplier());
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_Author_Click(object sender, EventArgs e)
-        {
-           // ShowSubMenu(pa);
         }
 
         private void btnSupplier_Click(object sender, EventArgs e)
@@ -155,6 +141,21 @@ namespace BookHeven.Forms
         private void btn_PlaceOrder_Click(object sender, EventArgs e)
         {
             OpenChildForm(new AddNewOrder());
+        }
+
+        private void btn_UserAdd_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(UserPnl);
+        }
+
+        private void btn_Author_Click_1(object sender, EventArgs e)
+        {
+            ShowSubMenu(AuthorPanel);
+        }
+
+        private void btn_UserAdd_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new AddNewUser());
         }
     }
 }

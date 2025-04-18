@@ -30,11 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookHevenDashBoard));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.AuthorPanel = new System.Windows.Forms.Panel();
+            this.btnAddAuthor = new System.Windows.Forms.Button();
+            this.btn_Author = new System.Windows.Forms.Button();
             this.SuplierPanel = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btn_Author = new System.Windows.Forms.Button();
             this.panelOrderMSubMenu = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -55,7 +56,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.mySqlConnection1 = new MySql.Data.MySqlClient.MySqlConnection();
             this.btnAddNewCustomer = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.UserPnl = new System.Windows.Forms.Panel();
+            this.btn_UserAdd = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
+            this.AuthorPanel.SuspendLayout();
             this.SuplierPanel.SuspendLayout();
             this.panelOrderMSubMenu.SuspendLayout();
             this.panelCustomerMSubMenu.SuspendLayout();
@@ -63,16 +68,19 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.UserPnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(211)))), ((int)(((byte)(191)))));
+            this.panelSideMenu.Controls.Add(this.UserPnl);
+            this.panelSideMenu.Controls.Add(this.button2);
+            this.panelSideMenu.Controls.Add(this.AuthorPanel);
+            this.panelSideMenu.Controls.Add(this.btn_Author);
             this.panelSideMenu.Controls.Add(this.SuplierPanel);
             this.panelSideMenu.Controls.Add(this.button4);
-            this.panelSideMenu.Controls.Add(this.button3);
-            this.panelSideMenu.Controls.Add(this.btn_Author);
             this.panelSideMenu.Controls.Add(this.panelOrderMSubMenu);
             this.panelSideMenu.Controls.Add(this.btnOrderManagement);
             this.panelSideMenu.Controls.Add(this.panelCustomerMSubMenu);
@@ -88,15 +96,63 @@
             this.panelSideMenu.Size = new System.Drawing.Size(399, 1010);
             this.panelSideMenu.TabIndex = 0;
             // 
+            // AuthorPanel
+            // 
+            this.AuthorPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.AuthorPanel.Controls.Add(this.btnAddAuthor);
+            this.AuthorPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AuthorPanel.Location = new System.Drawing.Point(0, 824);
+            this.AuthorPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.AuthorPanel.Name = "AuthorPanel";
+            this.AuthorPanel.Size = new System.Drawing.Size(399, 47);
+            this.AuthorPanel.TabIndex = 26;
+            // 
+            // btnAddAuthor
+            // 
+            this.btnAddAuthor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddAuthor.FlatAppearance.BorderSize = 0;
+            this.btnAddAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddAuthor.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAuthor.ForeColor = System.Drawing.Color.Black;
+            this.btnAddAuthor.Location = new System.Drawing.Point(0, 0);
+            this.btnAddAuthor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddAuthor.Name = "btnAddAuthor";
+            this.btnAddAuthor.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnAddAuthor.Size = new System.Drawing.Size(399, 37);
+            this.btnAddAuthor.TabIndex = 19;
+            this.btnAddAuthor.Text = "Add New Author";
+            this.btnAddAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddAuthor.UseVisualStyleBackColor = true;
+            this.btnAddAuthor.Click += new System.EventHandler(this.btnAuthor_Add);
+            // 
+            // btn_Author
+            // 
+            this.btn_Author.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(211)))), ((int)(((byte)(191)))));
+            this.btn_Author.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Author.FlatAppearance.BorderSize = 0;
+            this.btn_Author.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Author.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Author.ForeColor = System.Drawing.Color.Black;
+            this.btn_Author.Location = new System.Drawing.Point(0, 776);
+            this.btn_Author.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Author.Name = "btn_Author";
+            this.btn_Author.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btn_Author.Size = new System.Drawing.Size(399, 48);
+            this.btn_Author.TabIndex = 24;
+            this.btn_Author.Text = "Author Management";
+            this.btn_Author.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Author.UseVisualStyleBackColor = false;
+            this.btn_Author.Click += new System.EventHandler(this.btn_Author_Click_1);
+            // 
             // SuplierPanel
             // 
             this.SuplierPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
             this.SuplierPanel.Controls.Add(this.button13);
             this.SuplierPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SuplierPanel.Location = new System.Drawing.Point(0, 835);
+            this.SuplierPanel.Location = new System.Drawing.Point(0, 729);
             this.SuplierPanel.Margin = new System.Windows.Forms.Padding(4);
             this.SuplierPanel.Name = "SuplierPanel";
-            this.SuplierPanel.Size = new System.Drawing.Size(399, 153);
+            this.SuplierPanel.Size = new System.Drawing.Size(399, 47);
             this.SuplierPanel.TabIndex = 19;
             // 
             // button13
@@ -110,7 +166,7 @@
             this.button13.Margin = new System.Windows.Forms.Padding(4);
             this.button13.Name = "button13";
             this.button13.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(399, 49);
+            this.button13.Size = new System.Drawing.Size(399, 33);
             this.button13.TabIndex = 19;
             this.button13.Text = "Add New Supplier";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -124,7 +180,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(0, 778);
+            this.button4.Location = new System.Drawing.Point(0, 672);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
@@ -134,42 +190,6 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.btnSupplier_Click);
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(0, 729);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(399, 49);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Add New Author";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.btnAuthor_Add);
-            // 
-            // btn_Author
-            // 
-            this.btn_Author.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Author.FlatAppearance.BorderSize = 0;
-            this.btn_Author.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Author.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Author.ForeColor = System.Drawing.Color.Black;
-            this.btn_Author.Location = new System.Drawing.Point(0, 672);
-            this.btn_Author.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Author.Name = "btn_Author";
-            this.btn_Author.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btn_Author.Size = new System.Drawing.Size(399, 57);
-            this.btn_Author.TabIndex = 15;
-            this.btn_Author.Text = "Author Management";
-            this.btn_Author.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Author.UseVisualStyleBackColor = true;
-            this.btn_Author.Click += new System.EventHandler(this.btn_Author_Click);
             // 
             // panelOrderMSubMenu
             // 
@@ -476,6 +496,54 @@
             this.btnAddNewCustomer.TabIndex = 4;
             this.btnAddNewCustomer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChild_Paint);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(211)))), ((int)(((byte)(191)))));
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(0, 871);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(399, 50);
+            this.button2.TabIndex = 27;
+            this.button2.Text = "User Management";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btn_UserAdd_Click);
+            // 
+            // UserPnl
+            // 
+            this.UserPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.UserPnl.Controls.Add(this.btn_UserAdd);
+            this.UserPnl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UserPnl.Location = new System.Drawing.Point(0, 921);
+            this.UserPnl.Margin = new System.Windows.Forms.Padding(4);
+            this.UserPnl.Name = "UserPnl";
+            this.UserPnl.Size = new System.Drawing.Size(399, 45);
+            this.UserPnl.TabIndex = 29;
+            // 
+            // btn_UserAdd
+            // 
+            this.btn_UserAdd.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_UserAdd.FlatAppearance.BorderSize = 0;
+            this.btn_UserAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UserAdd.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_UserAdd.ForeColor = System.Drawing.Color.Black;
+            this.btn_UserAdd.Location = new System.Drawing.Point(0, 0);
+            this.btn_UserAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_UserAdd.Name = "btn_UserAdd";
+            this.btn_UserAdd.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btn_UserAdd.Size = new System.Drawing.Size(399, 34);
+            this.btn_UserAdd.TabIndex = 20;
+            this.btn_UserAdd.Text = "Add New User";
+            this.btn_UserAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_UserAdd.UseVisualStyleBackColor = true;
+            this.btn_UserAdd.Click += new System.EventHandler(this.btn_UserAdd_Click_1);
+            // 
             // BookHevenDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -488,6 +556,7 @@
             this.Text = "Book";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelSideMenu.ResumeLayout(false);
+            this.AuthorPanel.ResumeLayout(false);
             this.SuplierPanel.ResumeLayout(false);
             this.panelOrderMSubMenu.ResumeLayout(false);
             this.panelCustomerMSubMenu.ResumeLayout(false);
@@ -496,6 +565,7 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.UserPnl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -523,10 +593,15 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_Author;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel SuplierPanel;
+        private System.Windows.Forms.Panel AuthorrPanel;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Panel AuthorPanel;
+        private System.Windows.Forms.Button btnAddAuthor;
+        private System.Windows.Forms.Button btn_Author;
+        private System.Windows.Forms.Panel UserPnl;
+        private System.Windows.Forms.Button btn_UserAdd;
+        private System.Windows.Forms.Button button2;
     }
 }
