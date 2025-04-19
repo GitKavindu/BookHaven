@@ -41,10 +41,14 @@
             this.cmbCustomers = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lblBooks = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tblPnlDataEntry.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_Quantity)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label7
@@ -87,14 +91,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tblPnlDataEntry.ColumnCount = 1;
             this.tblPnlDataEntry.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblPnlDataEntry.Controls.Add(this.panel2, 0, 9);
             this.tblPnlDataEntry.Controls.Add(this.panel1, 0, 6);
-            this.tblPnlDataEntry.Controls.Add(this.lbl_addedBooks, 0, 7);
-            this.tblPnlDataEntry.Controls.Add(this.btnAuthorSave, 0, 9);
-            this.tblPnlDataEntry.Controls.Add(this.btn_AddBook, 0, 8);
             this.tblPnlDataEntry.Controls.Add(this.cmbBooks, 0, 5);
             this.tblPnlDataEntry.Controls.Add(this.cmbCustomers, 0, 3);
             this.tblPnlDataEntry.Controls.Add(this.label5, 0, 0);
             this.tblPnlDataEntry.Controls.Add(this.lblBooks, 0, 4);
+            this.tblPnlDataEntry.Controls.Add(this.lbl_addedBooks, 0, 8);
+            this.tblPnlDataEntry.Controls.Add(this.panel3, 0, 7);
             this.tblPnlDataEntry.Location = new System.Drawing.Point(3, 55);
             this.tblPnlDataEntry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tblPnlDataEntry.Name = "tblPnlDataEntry";
@@ -105,11 +109,12 @@
             this.tblPnlDataEntry.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tblPnlDataEntry.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tblPnlDataEntry.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tblPnlDataEntry.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tblPnlDataEntry.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 107F));
-            this.tblPnlDataEntry.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tblPnlDataEntry.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tblPnlDataEntry.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tblPnlDataEntry.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 221F));
             this.tblPnlDataEntry.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblPnlDataEntry.Size = new System.Drawing.Size(1190, 414);
+            this.tblPnlDataEntry.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114F));
+            this.tblPnlDataEntry.Size = new System.Drawing.Size(1190, 567);
             this.tblPnlDataEntry.TabIndex = 0;
             this.tblPnlDataEntry.Paint += new System.Windows.Forms.PaintEventHandler(this.tblPnlDataEntry_Paint);
             // 
@@ -119,7 +124,7 @@
             this.panel1.Controls.Add(this.num_Quantity);
             this.panel1.Location = new System.Drawing.Point(3, 176);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(444, 25);
+            this.panel1.Size = new System.Drawing.Size(452, 25);
             this.panel1.TabIndex = 3;
             // 
             // lbl_BookQuantity
@@ -143,7 +148,7 @@
             // lbl_addedBooks
             // 
             this.lbl_addedBooks.AutoSize = true;
-            this.lbl_addedBooks.Location = new System.Drawing.Point(3, 204);
+            this.lbl_addedBooks.Location = new System.Drawing.Point(3, 287);
             this.lbl_addedBooks.Name = "lbl_addedBooks";
             this.lbl_addedBooks.Size = new System.Drawing.Size(0, 16);
             this.lbl_addedBooks.TabIndex = 26;
@@ -151,10 +156,10 @@
             // btnAuthorSave
             // 
             this.btnAuthorSave.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnAuthorSave.Location = new System.Drawing.Point(743, 371);
+            this.btnAuthorSave.Location = new System.Drawing.Point(3, 2);
             this.btnAuthorSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnAuthorSave.Name = "btnAuthorSave";
-            this.btnAuthorSave.Size = new System.Drawing.Size(443, 34);
+            this.btnAuthorSave.Size = new System.Drawing.Size(445, 49);
             this.btnAuthorSave.TabIndex = 25;
             this.btnAuthorSave.Text = "Save";
             this.btnAuthorSave.UseVisualStyleBackColor = true;
@@ -163,10 +168,10 @@
             // btn_AddBook
             // 
             this.btn_AddBook.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_AddBook.Location = new System.Drawing.Point(743, 320);
+            this.btn_AddBook.Location = new System.Drawing.Point(0, 0);
             this.btn_AddBook.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AddBook.Name = "btn_AddBook";
-            this.btn_AddBook.Size = new System.Drawing.Size(443, 32);
+            this.btn_AddBook.Size = new System.Drawing.Size(448, 38);
             this.btn_AddBook.TabIndex = 2;
             this.btn_AddBook.Text = "Add Book";
             this.btn_AddBook.UseVisualStyleBackColor = true;
@@ -211,6 +216,22 @@
             this.lblBooks.TabIndex = 1;
             this.lblBooks.Text = "Books";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnAuthorSave);
+            this.panel2.Location = new System.Drawing.Point(3, 511);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(450, 53);
+            this.panel2.TabIndex = 28;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btn_AddBook);
+            this.panel3.Location = new System.Drawing.Point(3, 214);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(448, 70);
+            this.panel3.TabIndex = 29;
+            // 
             // AddNewOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -227,6 +248,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_Quantity)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -246,5 +269,7 @@
         private System.Windows.Forms.Label lbl_BookQuantity;
         private System.Windows.Forms.NumericUpDown num_Quantity;
         private System.Windows.Forms.Label lbl_addedBooks;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
