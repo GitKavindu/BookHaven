@@ -13,6 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BookHeven.config;
 
 namespace BookHeven.Forms
 {
@@ -25,6 +26,7 @@ namespace BookHeven.Forms
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            EnablePanels();
             //customizeDesign();
             //panelBookISubMenu.Visible = true;
         }
@@ -51,6 +53,13 @@ namespace BookHeven.Forms
                 panelOrderMSubMenu.Visible = false;
             /*if (panelSupplierMSubMenu.Visible == true)
                 panelSupplierMSubMenu.Visible = false;*/
+        }
+        private void EnablePanels()
+        {
+            if(DataSourceConfig.role== "Admin")
+            {
+                btn_UserManage.Enabled = true;
+            }
         }
 
         private void ShowSubMenu(Panel subMenu) {

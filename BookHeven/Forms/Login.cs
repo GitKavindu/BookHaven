@@ -46,10 +46,28 @@ namespace BookHeven.Forms
                 return;
             }
 
-            if (ValidateLogin(userName, password)) { 
-                    Form dashboard = new BookHevenDashBoard();
-                    dashboard.Show();
-                    this.Hide();
+            if (ValidateLogin(userName, password)) {
+
+                try
+                {
+                    connection.Open();
+                    string query = "SELECT role FROM users WHERE UserName=@UserName";
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@UserName", userName);
+                    DataSourceConfig.role=cmd.ExecuteScalar().ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+
+                Form dashboard = new BookHevenDashBoard();
+                dashboard.Show();
+                this.Hide();
               }
             
             else
