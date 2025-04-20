@@ -166,5 +166,10 @@ namespace BookHeven.Forms
         {
             OpenChildForm(new AddNewUser());
         }
+
+        private void btn_AllOrders_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new AllOrders());
+        }
     }
 }

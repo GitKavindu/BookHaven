@@ -101,3 +101,4 @@ D:\Documents\Csharp\forms\bookstore\Project\Book-Heaven-Book-Store-main\BookHeve
 D:\Documents\Csharp\forms\bookstore\Project\Book-Heaven-Book-Store-main\BookHeven\obj\Debug\BookHeven.Forms.SupplierManagement.AddNewSupplier.resources
 D:\Documents\Csharp\forms\bookstore\Project\Book-Heaven-Book-Store-main\BookHeven\obj\Debug\BookHeven.Forms.OrderManagement.AddNewOrder.resources
 D:\Documents\Csharp\forms\bookstore\Project\Book-Heaven-Book-Store-main\BookHeven\obj\Debug\BookHeven.Forms.UserManagement.AddNewUser.resources
+D:\Documents\Csharp\forms\bookstore\Project\Book-Heaven-Book-Store-main\BookHeven\obj\Debug\BookHeven.Forms.OrderManagement.AllOrders.resources

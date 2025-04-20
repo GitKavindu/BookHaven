@@ -105,6 +105,12 @@
     <Compile Include="Forms\OrderManagement\AddNewOrder.Designer.cs">
       <DependentUpon>AddNewOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OrderManagement\AllOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OrderManagement\AllOrders.Designer.cs">
+      <DependentUpon>AllOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UserManagement\AddNewUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\OrderManagement\AddNewOrder.resx">
       <DependentUpon>AddNewOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OrderManagement\AllOrders.resx">
+      <DependentUpon>AllOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserManagement\AddNewUser.resx">
       <DependentUpon>AddNewUser.cs</DependentUpon>

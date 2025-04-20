@@ -40,12 +40,10 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panelOrderMSubMenu = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btn_AllOrders = new System.Windows.Forms.Button();
             this.btn_PlaceOrder = new System.Windows.Forms.Button();
             this.btnOrderManagement = new System.Windows.Forms.Button();
             this.panelCustomerMSubMenu = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.btnCustomerManagement = new System.Windows.Forms.Button();
@@ -59,6 +57,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.mySqlConnection1 = new MySql.Data.MySqlClient.MySqlConnection();
             this.btnAddNewCustomer = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.UserPnl.SuspendLayout();
             this.AuthorPanel.SuspendLayout();
@@ -247,7 +247,7 @@
             // 
             this.panelOrderMSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
             this.panelOrderMSubMenu.Controls.Add(this.button1);
-            this.panelOrderMSubMenu.Controls.Add(this.button8);
+            this.panelOrderMSubMenu.Controls.Add(this.btn_AllOrders);
             this.panelOrderMSubMenu.Controls.Add(this.btn_PlaceOrder);
             this.panelOrderMSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelOrderMSubMenu.Location = new System.Drawing.Point(0, 519);
@@ -257,40 +257,23 @@
             this.panelOrderMSubMenu.TabIndex = 4;
             this.panelOrderMSubMenu.Visible = false;
             // 
-            // button1
+            // btn_AllOrders
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(0, 98);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(399, 41);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button8
-            // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Location = new System.Drawing.Point(0, 49);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(399, 49);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "button8";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = true;
+            this.btn_AllOrders.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_AllOrders.FlatAppearance.BorderSize = 0;
+            this.btn_AllOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_AllOrders.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AllOrders.ForeColor = System.Drawing.Color.Black;
+            this.btn_AllOrders.Location = new System.Drawing.Point(0, 49);
+            this.btn_AllOrders.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_AllOrders.Name = "btn_AllOrders";
+            this.btn_AllOrders.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btn_AllOrders.Size = new System.Drawing.Size(399, 49);
+            this.btn_AllOrders.TabIndex = 1;
+            this.btn_AllOrders.Text = "All Orders";
+            this.btn_AllOrders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_AllOrders.UseVisualStyleBackColor = true;
+            this.btn_AllOrders.Click += new System.EventHandler(this.btn_AllOrders_Click);
             // 
             // btn_PlaceOrder
             // 
@@ -341,23 +324,6 @@
             this.panelCustomerMSubMenu.Size = new System.Drawing.Size(399, 153);
             this.panelCustomerMSubMenu.TabIndex = 3;
             this.panelCustomerMSubMenu.Visible = false;
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(0, 98);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(399, 31);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "button5";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -550,6 +516,41 @@
             this.btnAddNewCustomer.TabIndex = 4;
             this.btnAddNewCustomer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChild_Paint);
             // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(0, 98);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(399, 31);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "button5";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(0, 98);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(399, 41);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // BookHevenDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -585,14 +586,12 @@
         private System.Windows.Forms.Button btnAddNewBook;
         private System.Windows.Forms.Button btnVewAllBooks;
         private System.Windows.Forms.Panel panelCustomerMSubMenu;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button btnCustomerManagement;
         private System.Windows.Forms.Panel btnAddNewCustomer;
         private System.Windows.Forms.Panel panelOrderMSubMenu;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btn_AllOrders;
         private System.Windows.Forms.Button btn_PlaceOrder;
         private System.Windows.Forms.Button btnOrderManagement;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -609,5 +608,7 @@
         private System.Windows.Forms.Panel UserPnl;
         private System.Windows.Forms.Button btn_UserAdd;
         private System.Windows.Forms.Button btn_UserManage;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button5;
     }
 }

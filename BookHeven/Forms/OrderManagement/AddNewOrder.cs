@@ -25,6 +25,7 @@ namespace BookHeven.Forms.OrderManagement
             // LoadSuppliers();
             LoadBooks();
             LoadCustomers();
+            
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -100,6 +101,8 @@ namespace BookHeven.Forms.OrderManagement
                 connection.Close();
             }
         }
+
+        
 
         private void btnAdd_Author(object sender, EventArgs e)
         {
@@ -266,6 +269,7 @@ namespace BookHeven.Forms.OrderManagement
             {
                 connection.Close();
                 RefreshList();
+                
             }
         }
 
